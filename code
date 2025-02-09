@@ -1,0 +1,49 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+sns.set(style="whitegrid")
+
+data_path = '../data/netflix_vs_disney.csv'
+
+df = pd.read_csv(data_path)
+
+df.head()
+
+df.describe()
+
+missing_data = df.isnull().sum()
+missing_data_percentage = (missing_data / len(df)) * 100
+print("Missing Data Percentage:")
+print(missing_data_percentage)
+
+plt.figure(figsize=(10, 6))
+sns.heatmap(df.isnull(), cbar=False, cmap='viridis')
+plt.title('Missing Data Heatmap')
+plt.show()
+
+plt.figure(figsize=(10, 6))
+sns.histplot(df['subscribers'], kde=True, bins=20, color='blue')
+plt.title('Distribution of Subscribers')
+plt.xlabel('Subscribers')
+plt.ylabel('Frequency')
+plt.show()
+
+plt.figure(figsize=(8, 6))
+sns.countplot(data=df, x='platform', palette='Set2')
+plt.title('Distribution of Subscribers by Platform')
+plt.xlabel('Platform')
+plt.ylabel('Count')
+plt.show()
+
+df['subscribers'] = pd.to_numeric(df['subscribers'], errors='coerce')
+
+print(df.dtypes)
+
+df.head()
+
+df.to_csv('../data/cleaned_netflix_vs_disney.csv', index=False)
+
+print("EDA and preprocessing steps completed successfully!")
+
