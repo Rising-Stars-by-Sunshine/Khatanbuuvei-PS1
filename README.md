@@ -1,54 +1,56 @@
 # Khatanbuuvei-PS1
 # Netflix vs Disney Data Analysis
-Data Analysis Setup for Netflix vs Disney Subscriber Growth and Retention
-Overview
-This repository contains the data analysis for examining how the content offerings (original programming, genre diversity, and franchise presence) and pricing strategies of Netflix and Disney influence subscriber growth and retention across various demographic groups (age, region, and income) from 2018 to 2024.
+# Data Analysis Setup for Netflix vs Disney Subscriber Growth and Retention
 
-System Configuration
-Local Environment Setup
-To run the data analysis on your local machine, you need to have the following dependencies installed:
+## Overview
 
-Python: Ensure that Python (preferably version 3.8 or later) is installed. You can download it from python.org.
+This repository contains data and code for analyzing how content offerings (original programming, genre diversity, and franchise presence) and pricing strategies of Netflix and Disney influence subscriber growth and retention across various demographic groups (age, region, and income) from 2018 to 2024.
 
-Package Manager: If you don’t have pip installed, you can install it by running:
+## System Configuration
 
-bash
-Copy
-Edit
-python -m ensurepip --upgrade
-Required Libraries:
+### Local Environment Setup
 
-Pandas: For data manipulation and analysis.
-Matplotlib: For plotting graphs and visualizations.
-Seaborn: For statistical data visualization.
-NumPy: For numerical operations.
-Scikit-learn: For machine learning models and evaluation.
-Install these libraries by running:
+To run the analysis on your local machine, make sure the following tools and packages are installed:
+
+1. **Python**: Ensure that Python (version 3.8 or later) is installed. You can download it from [python.org](https://www.python.org/downloads/).
+
+2. **Install Required Libraries**:  
+   Install the necessary libraries via `pip`:
+   ```bash
+   pip install pandas matplotlib seaborn numpy scikit-learn
+3. **Clone the Repository**:
+Clone this repository to your local machine using the following command:
 
 bash
 Copy
 Edit
-pip install pandas matplotlib seaborn numpy scikit-learn
-Dataset: Download the dataset from the repository. Ensure that all data files are in the correct directory structure as described in the repository.
+git clone https://github.com/your-username/your-repository.git
+4. **Running the Analysis**:
 
+5. Download the dataset from Kaggle (Netflix vs Disney Dataset) and place it in the data folder within the repository.
+After setting up, you can run the analysis by executing the Python scripts in the analysis folder.
 Cloud Environment Setup
-To run the analysis in the cloud, you can use services such as Google Colab or Microsoft Azure Notebooks. Here’s a guide for setting it up in Google Colab:
+To run the analysis in a cloud environment, you can use Google Colab or any other cloud service of your choice.
 
 Google Colab Setup:
 
-Go to Google Colab and create a new notebook.
-Mount your Google Drive (if necessary) to upload and access the data.
-Use the following code snippet to install the necessary libraries:
+Open a new notebook in Google Colab.
+Mount your Google Drive (if necessary) to upload and access the dataset.
+Install Required Libraries:
+Run the following code in the first cell of the Colab notebook to install necessary libraries:
+
 python
 Copy
 Edit
 !pip install pandas matplotlib seaborn numpy scikit-learn
-Data Files: Upload the dataset from the GitHub repository into your Colab environment by running:
+Dataset Upload:
+Upload the dataset from Kaggle to your Colab environment:
 
 python
 Copy
 Edit
 from google.colab import files
 uploaded = files.upload()
-Running the Analysis: After setting up the environment, import the required libraries and execute the analysis steps as shown in the notebook.
+Running the Analysis:
+After uploading the dataset, run the code in the notebook to perform the analysis.
 
