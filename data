@@ -1,0 +1,17 @@
+Data Source: Netflix vs Disney Dataset
+Description
+The dataset used for this analysis is sourced from Kaggle, titled Netflix vs Disney. This dataset provides detailed information about the content offerings (original programming, genre diversity, franchise presence) and pricing strategies of both Netflix and Disney. It spans subscriber growth and retention metrics across various demographic groups, including age, region, and income, from 2018 to 2024. The data offers valuable insights into how these companies have evolved in terms of content diversity and pricing strategies, and how those factors correlate with their success in attracting and retaining subscribers.
+
+You can access the dataset directly via this Kaggle link (https://www.kaggle.com/datasets/prathamjyotsingh/netflix-vs-disney).
+
+Data Dictionary
+Variable	Description
+year	The year in which the data was recorded (2018-2024).
+platform	Indicates whether the data refers to Netflix or Disney.
+subscribers	The number of subscribers for each platform in a given year.
+genre_diversity	A score representing the diversity of genres offered by the platform.
+original_programming	A binary indicator (1 or 0) indicating whether the content is original programming by Netflix or Disney.
+pricing_strategy	Pricing model used by the platform (e.g., subscription tier, promotional pricing).
+age_group	The age group of subscribers (e.g., 18-24, 25-34, etc.).
+region	The geographical region of the subscribers (e.g., North America, Europe, Asia).
+income_group	The income group of the subscribers (e.g., Low, Medium, High).
